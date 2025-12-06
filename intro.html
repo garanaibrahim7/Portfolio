@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim | Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --subtext-color: #666;
+            --hover-color: #f0f0f0;
+            --accent-color: #2563eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 15px;
+            /* If you want to add your photo, uncomment the line below and change the src */
+            /* background-image: url('your-photo.jpg'); background-size: cover; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #fff;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .role {
+            font-size: 16px;
+            color: var(--subtext-color);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Links Section */
+        .link-item {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .link-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-color: var(--accent-color);
+        }
+
+        .link-item i {
+            font-size: 24px;
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+
+        /* Brand Colors for Icons */
+        .fa-github { color: #333; }
+        .fa-linkedin { color: #0077b5; }
+        .fa-facebook { color: #1877f2; }
+        .fa-instagram { color: #e4405f; }
+        .fa-x-twitter { color: #000; }
+
+        .username {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-img">I</div>
+        
+        <h1>Ibrahim</h1>
+        <p class="role">MCA Student</p>
+
+        <div class="links">
+            <a href="https://github.com/garanaibrahim7" target="_blank" class="link-item">
+                <i class="fab fa-github"></i>
+                <span class="username">@garanaibrahim7</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/garanaibrahim7" target="_blank" class="link-item">
+                <i class="fab fa-linkedin"></i>
+                <span class="username">@garanaibrahim7</span>
+            </a>
+
+            <a href="https://www.facebook.com/garanaibrahim7" target="_blank" class="link-item">
+                <i class="fab fa-facebook"></i>
+                <span class="username">@garanaibrahim7</span>
+            </a>
+
+            <a href="https://www.instagram.com/garanaibrahim7" target="_blank" class="link-item">
+                <i class="fab fa-instagram"></i>
+                <span class="username">@garanaibrahim7</span>
+            </a>
+
+            <a href="https://x.com/garanaibrahim7" target="_blank" class="link-item">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span class="username">@garanaibrahim7</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Ibrahim
+        </div>
+    </div>
+
+</body>
+</html>
