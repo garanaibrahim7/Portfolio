@@ -42,18 +42,16 @@
         }
 
         /* Profile Section */
-        /* --- CHANGED STYLES FOR IMG TAG --- */
         .profile-img {
             width: 100px;
             height: 100px;
-            border-radius: 50%; /* Makes the image circular */
-            margin: 0 auto 15px; /* Centers the image */
-            object-fit: cover; /* Ensures the image covers the area without stretching */
-            border: 3px solid #ffffff; /* Optional white border */
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            object-fit: cover;
+            border: 3px solid #ffffff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: block; /* Important for centering the image */
+            display: block;
         }
-        /* --------------------------------- */
 
         h1 {
             font-size: 24px;
@@ -72,7 +70,7 @@
         .link-item {
             display: flex;
             align-items: center;
-            justify-content: center; /* <<< FIX: Centers the content within the link block */
+            justify-content: center;
             background-color: #fff;
             border: 1px solid #e0e0e0;
             padding: 15px 20px;
@@ -91,8 +89,8 @@
 
         .link-item i {
             font-size: 24px;
-            margin-right: 15px;
-            width: 30px;
+            margin-right: 10px;
+            width: auto;
             text-align: center;
         }
 
@@ -102,6 +100,8 @@
         .fa-facebook { color: #1877f2; }
         .fa-instagram { color: #e4405f; }
         .fa-x-twitter { color: #000; }
+        .fa-whatsapp { color: #25D366; } /* WhatsApp Green */
+        .fa-envelope { color: #D44638; } /* General Mail/Gmail Red */
 
         .username {
             font-weight: 500;
@@ -119,11 +119,24 @@
 <body>
 
     <div class="container">
-        <img src="/1761027360018.jpg" alt="Ibrahim Profile Photo" class="profile-img">
+        <img src="photo.jpg" alt="Ibrahim Profile Photo" class="profile-img">
+        
         <h1>Ibrahim</h1>
         <p class="role">MCA Student</p>
 
         <div class="links">
+            <a href="mailto: ibrahimggarana07@gmail.com" target="_blank" class="link-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="username">ibrahimggarana07@gmail.com</span>
+            </a>
+
+            <a href="https://wa.me/+919724115337" target="_blank" class="link-item">
+                <i class="fab fa-whatsapp"></i>
+                <span class="username">WhatsApp (Direct Connect)</span>
+            </a>
+            
+            <hr style="margin: 20px 0; border: none; border-top: 1px solid #eee;">
+
             <a href="https://github.com/garanaibrahim7" target="_blank" class="link-item">
                 <i class="fab fa-github"></i>
                 <span class="username">@garanaibrahim7</span>
