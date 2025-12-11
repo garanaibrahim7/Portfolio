@@ -1,172 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim | Links</title>
+    <title>Ibrahim Garana | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        :root {
-            --bg-color: #f4f6f8;
-            --card-bg: #ffffff;
-            --text-color: #333;
-            --subtext-color: #666;
-            --hover-color: #f0f0f0;
-            --accent-color: #2563eb;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            background-color: var(--card-bg);
-            width: 100%;
-            max-width: 400px;
-            padding: 40px 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-
-        /* Profile Section */
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 0 auto 15px;
-            object-fit: cover;
-            border: 3px solid #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: block;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: var(--text-color);
-            margin-bottom: 5px;
-        }
-
-        .role {
-            font-size: 16px;
-            color: var(--subtext-color);
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        /* Links Section */
-        .link-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            border: 1px solid #e0e0e0;
-            padding: 15px 20px;
-            margin-bottom: 12px;
-            border-radius: 12px;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: all 0.3s ease;
-        }
-
-        .link-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-color: var(--accent-color);
-        }
-
-        .link-item i {
-            font-size: 24px;
-            margin-right: 10px;
-            width: auto;
-            text-align: center;
-        }
-
-        /* Brand Colors for Icons */
-        .fa-github { color: #333; }
-        .fa-linkedin { color: #0077b5; }
-        .fa-facebook { color: #1877f2; }
-        .fa-instagram { color: #e4405f; }
-        .fa-x-twitter { color: #000; }
-        .fa-whatsapp { color: #25D366; } /* WhatsApp Green */
-        .fa-envelope { color: #D44638; } /* General Mail/Gmail Red */
-
-        .username {
-            font-weight: 500;
-            font-size: 16px;
-        }
-        
-        /* Footer */
-        .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            color: #999;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <img src="1761027360018.jpg" alt="Ibrahim Profile Photo" class="profile-img">
-        
-        <h1>Ibrahim</h1>
-        <p class="role">MCA Student</p>
-
-        <div class="links">
-            <a href="mailto: ibrahimggarana07@gmail.com" target="_blank" class="link-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span class="username">ibrahimggarana07@gmail.com</span>
-            </a>
-
-            <a href="https://wa.me/+919724115337" target="_blank" class="link-item">
-                <i class="fab fa-whatsapp"></i>
-                <span class="username">WhatsApp (Direct Connect)</span>
-            </a>
-            
-            <hr style="margin: 20px 0; border: none; border-top: 1px solid #eee;">
-
-            <a href="https://github.com/garanaibrahim7" target="_blank" class="link-item">
-                <i class="fab fa-github"></i>
-                <span class="username">@garanaibrahim7</span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/garanaibrahim7" target="_blank" class="link-item">
-                <i class="fab fa-linkedin"></i>
-                <span class="username">@garanaibrahim7</span>
-            </a>
-
-            <a href="https://www.facebook.com/garanaibrahim7" target="_blank" class="link-item">
-                <i class="fab fa-facebook"></i>
-                <span class="username">@garanaibrahim7</span>
-            </a>
-
-            <a href="https://www.instagram.com/garanaibrahim7" target="_blank" class="link-item">
-                <i class="fab fa-instagram"></i>
-                <span class="username">@garanaibrahim7</span>
-            </a>
-
-            <a href="https://x.com/garanaibrahim7" target="_blank" class="link-item">
-                <i class="fa-brands fa-x-twitter"></i>
-                <span class="username">@garanaibrahim7</span>
-            </a>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Ibrahim.</div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="footer">
-            &copy; 2025 Ibrahim
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="1761027360018.jpg" alt="Ibrahim Garana" class="profile-img">
+            <h1>Ibrahim Garana</h1>
+            <p class="hero-role">MCA Student & Developer</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Get In Touch</a>
+                <a href="https://drive.google.com/file/d/1tg6gtBPDYEKUQX90zny2nVXHv52EhHG3/view?usp=drive_link" download
+                    class="btn" style="background-color: var(--text-dark); margin-left: 10px;">Latest Resume</a>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div>
+                    <h3>I am an MCA Student</h3>
+                    <p style="margin-bottom: 20px;">I am an MCA student with good knowledge of computers and
+                        programming. I am eager to learn, and ready to take new challenges and Experience. Looking for
+                        an internship where I can improve my skills, gain real work experience, and give my best to the
+                        company.</p>
+
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <h4>Master of Computer Applications (MCA)</h4>
+                        <p class="text-light">Veer Narmad South Gujarat University - Surat | Sep 2024 - June 2026</p>
+                        <ul
+                            style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; margin-top: 5px; color: var(--text-light);">
+                            <li>Learned OOP and DSA Concepts to solve difficult tasks</li>
+                            <li>Cleared Fundamentals of Basic Web Programming, API Handling</li>
+                        </ul>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Bachelor of Computer Applications (BCA)</h4>
+                        <p class="text-light">Saurashtra University - Rajkot | June 2021 - March 2024</p>
+                        <ul
+                            style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; margin-top: 5px; color: var(--text-light);">
+                            <li>Learned about programming and got attracted to build new things</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Data from Resume -->
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">MERN Stack</span>
+                <span class="skill-tag">.NET</span>
+                <span class="skill-tag">Blockchain</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Spring</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Git/GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Work Experience & Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Cyber Cafe Management System</h3>
+                        <p class="text-light" style="font-size: 0.9rem; margin-bottom: 10px;">Nov 2024</p>
+                        <p>A web app for a local Cyber Cafe to manage documents and customers. Created using PHP to
+                            print receipts, save records to database/Excel, and generate daily work reports.</p>
+                        <div class="project-tags">
+                            <span>#PHP</span>
+                            <span>#MySQL</span>
+                            <span>#Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Rapid Drives - Car Rental</h3>
+                        <p class="text-light" style="font-size: 0.9rem; margin-bottom: 10px;">March 2024</p>
+                        <p>A BCA Sem 6 project allowing users to rent cars for specific periods and owners to manage
+                            requests. Built with JSP (Java) backend using JDBC and HTML/CSS/JS frontend.</p>
+                        <div class="project-tags">
+                            <span>#Java (JSP)</span>
+                            <span>#JDBC</span>
+                            <span>#HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Localine - E-commerce</h3>
+                        <p class="text-light" style="font-size: 0.9rem; margin-bottom: 10px;">Nov 2023</p>
+                        <p>A solo BCA Sem 5 project connecting local stores with citizens. Developed using PHP backend
+                            and HTML/CSS/JS frontend.</p>
+                        <div class="project-tags">
+                            <span>#PHP</span>
+                            <span>#E-commerce</span>
+                            <span>#Solo Project</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <p>Jetpur, Rajkot | +91 97241 15337</p>
+            </div>
+            <div class="social-links">
+                <a href="mailto:ibrahimggarana07@gmail.com" class="social-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>ibrahimggarana07@gmail.com</span>
+                </a>
+
+                <a href="https://wa.me/+919724115337" target="_blank" class="social-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a href="https://github.com/garanaibrahim7" target="_blank" class="social-item">
+                    <i class="fab fa-github"></i>
+                    <span>@garanaibrahim7</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/garanaibrahim7" target="_blank" class="social-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>@garanaibrahim7</span>
+                </a>
+
+                <!-- Added based on previous file, but ensuring resume matches -->
+                <a href="https://www.instagram.com/garanaibrahim7" target="_blank" class="social-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ibrahim Garana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
